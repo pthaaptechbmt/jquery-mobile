@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ứng dụng đọc báo</title>
+    <!-- Thêm thư viên jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Thêm thư viện jquery mobile -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <!-- Thêm thư viên jquery ui -->
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Trang chủ -->
+    <div data-role="page" id="Home">
+      <header data-role="header">
+        <h1>Trang chủ</h1>
+      </header>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#Home" data-transition="slide">Trang chủ</a></li>
+          <li><a href="#Contact" data-transition="slide">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div data-role="content">
+        <h3>Nội dung trang chủ</h3>
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <h1>Copy Right Ha Pham &copy;</h1>
+      </div>
+    </div>
+    <!-- Trang liên hệ -->
+    <div data-role="contact" id="Contact">
+      <div data-role="header">
+        <h1>Liên hệ</h1>
+      </div>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#Home" data-transition="slide">Trang chủ</a></li>
+          <li><a href="#Contact" data-transition="slide">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div data-role="content">
+        <h3>Nội dung liên hệ</h3>
+        <form id="contact-form" action="">
+          <label for="input-name">Họ tên:</label>
+          <input type="text" name="input-name" id="input-name" value="" />
+          <label for="input-content">Nội dung:</label>
+          <input type="text" name="input-content" id="input-content" value="" />
+          <div class="form-group">
+            <button id="submit" class="ui-shadow ui-btn ui-corner-all">Gửi</button>
+            <button id="reset" class="ui-shadow ui-btn ui-corner-all">Làm lại</button>
+          </div>
+        </form>
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <h1>Copy Right Ha Pham &copy;</h1>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

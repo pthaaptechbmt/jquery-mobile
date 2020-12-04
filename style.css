@@ -1,0 +1,6 @@
+.form-group {
+  display: flex;
+}
+button:nth-child(1).ui-btn.ui-shadow.ui-corner-all {
+  margin-right: 5px;
+}
